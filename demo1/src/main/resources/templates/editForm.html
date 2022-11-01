@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Good Thymes Virtual Grocery</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+
+	<h1>Employee Details</h1>
+	<form action="/update" method="post">
+		<input type="hidden" th:value="${employee.eId}" name="eId"/><br>
+		<input type="text" th:value="${employee.eName}" name="eName"/><br>
+		<input type="text" th:value="${employee.dept}" name="dept"><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+
+</html>
